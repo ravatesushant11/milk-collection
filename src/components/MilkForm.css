@@ -1,0 +1,23 @@
+label {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.81);
+}
+
+input {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.667);
+}
+
+.milk-main-form input,
+select {
+  background-color: white;
+}
+
+.milk-main-form div {
+  background-color: white;
+  padding: 8px;
+}
+
+.milk-main-form label {
+  background-color: white;
+}

@@ -1,0 +1,205 @@
+/* Report.css */
+
+.report-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2,
+h3 {
+  color: #3a89decc;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input,
+.search-box button {
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.vendor-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vendor-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.vendor-info div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  background-color: white;
+}
+
+.vendor-info p :nth-child(1) {
+  font-weight: 700;
+}
+
+.vendor-info label {
+  font-weight: bold;
+  background-color: white;
+}
+
+.vendor-card-btn {
+  margin-top: 5px;
+}
+
+.total-amount p {
+  text-align: center;
+  color: #3a89decc;
+  background-color: white;
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.vendor-card-label-dark {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.vendor-card-btns {
+  background-color: white;
+  display: flex;
+  gap: 5px;
+}
+
+.vendor-card div label,
+span {
+  background-color: white;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  gap: 5px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.edit-form label {
+  margin: 5px 0 2px;
+}
+
+.edit-form input,
+.edit-form select {
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.edit-form button {
+  margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .vendor-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+  }
+
+  .vendor-card {
+    width: 100%; /* Ensure cards fill their grid cells */
+  }
+}
+
+@media (min-width: 1024px) {
+  .vendor-cards {
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+  }
+}
+
+/* newwwwwwwwwwwwwwwwwwwwwwwwww */
+
+.vendor-info {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  /* margin-bottom: 16px; */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-info p {
+  background-color: white;
+  font-size: 16px;
+  color: #333;
+  margin: 8px 0;
+}
+
+.vendor-info span {
+  font-weight: bold;
+  background-color: white;
+}
+
+.vendor-card-btns {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  background-color: white;
+}
+
+.vendor-card-btns button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vendor-card-btns button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .vendor-info {
+    padding: 12px;
+  }
+
+  .vendor-info p {
+    font-size: 14px;
+  }
+
+  .nav-links li {
+    font-size: small;
+  }
+}
